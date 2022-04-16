@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/shun0305/go-blockchain/blockchain"
+	"github.com/shun0305/go-blockchain/wallet"
 )
 
 func init() {
@@ -12,6 +12,7 @@ func init() {
 }
 
 func main() {
-	g := blockchain.MINING_SENDER
-	fmt.Println(g)
+	w := wallet.NewWallet()
+	fmt.Println(w.PrivateKeyStr())
+	fmt.Println(w.PublicKeyStr())
 }
