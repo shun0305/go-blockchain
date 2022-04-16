@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
+
+	"github.com/shun0305/go-blockchain/blockchain"
 )
 
 func init() {
@@ -10,5 +12,6 @@ func init() {
 }
 
 func main() {
-	fmt.Println("test")
+	g := blockchain.MINING_SENDER
+	fmt.Println(g)
 }
