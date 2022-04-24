@@ -20,7 +20,7 @@ func (bcs *BlockchainServer) Port() uint16 {
 }
 
 func HelloWorld(w http.ResponseWriter, req *http.Request) {
-	io.WriteString(w, "Hello, World")
+	io.WriteString(w, "Hello, World!")
 }
 
 func (bcs *BlockchainServer) Run() {
