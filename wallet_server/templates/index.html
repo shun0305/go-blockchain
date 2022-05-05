@@ -10,9 +10,9 @@
           url: "/wallet",
           type: "POST",
           success: function (res) {
-            $("#public_key").val(res["PublicKey"]);
-            $("#private_key").val(res["PrivateKey"]);
-            $("#blockchain_address").val(res["BlockchainAddress"]);
+            $("#public_key").val(res["public_key"]);
+            $("#private_key").val(res["private_key"]);
+            $("#blockchain_address").val(res["blockchain_address"]);
             console.log(res);
           },
           error: function (error) {

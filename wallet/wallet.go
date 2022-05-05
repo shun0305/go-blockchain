@@ -80,9 +80,9 @@ func (w *Wallet) BlockchainAddress() string {
 
 func (w *Wallet) MarchalJSON() ([]byte, error) {
 	return json.Marshal(struct {
-		PrivateKey        string `json:private_key`
-		PublicKey         string `json:public_key`
-		BlockchainAddress string `json:blockchain_address`
+		PrivateKey        string `json:"private_key"`
+		PublicKey         string `json:"public_key"`
+		BlockchainAddress string `json:"blockchain_address"`
 	}{
 		PrivateKey:        w.PrivateKeyStr(),
 		PublicKey:         w.PublicKeyStr(),
